@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layout>
+        <layoutSections>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <componentInstances>
+                    <componentInstance>
+                        <componentName>c:SenderComponent</componentName>
+                    </componentInstance>
+                </componentInstances>
+                <height>small</height>
+                <width>small</width>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <componentInstances>
+                    <componentInstance>
+                        <componentName>c:ReceiverComponent</componentName>
+                    </componentInstance>
+                </componentInstances>
+                <height>small</height>
+                <width>small</width>
+            </layoutItems>
+        </layoutSections>
+    </layout>
+    <masterLabel>My Record Page</masterLabel>
+    <platforms>
+        <platform>RecordPage</platform>
+    </platforms>
+</RecordPage>

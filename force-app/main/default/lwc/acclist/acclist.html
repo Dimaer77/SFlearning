@@ -1,0 +1,7 @@
+<template >
+    <div class="container">
+        <template for:each={filteredAccounts} for:item="acc" >
+            <c-acctile key={acc.Id} account={acc} ></c-acctile>          
+        </template>    
+    </div>
+</template>

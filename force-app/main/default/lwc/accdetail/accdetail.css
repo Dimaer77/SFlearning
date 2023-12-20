@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+.cardcontainer {
+  padding: 10px;
+}

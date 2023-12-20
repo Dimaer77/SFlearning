@@ -1,0 +1,18 @@
+<template>
+    <div class="wrapper">
+      <header class="slds-text-title_bold; slds-text-heading_large">{labels.findAccount}</header>
+
+      <section class="content">
+        <div class="columns" >
+          <main class="main" >
+            <span>{selectedTypeValue}</span>
+            <c-acctypeselector ontypechange={typeChangeHandler}></c-acctypeselector>
+            <c-acclist selected-acc-type={selectedTypeValue} onacctileid={accountTileIdHandler}></c-acclist>
+          </main>
+          <aside class="sidebar-second">
+            <c-accdetail account-id={accountId}></c-accdetail>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </template>

@@ -1,0 +1,21 @@
+<template>
+        <div class="rotating-card">
+            <div class="card-inner">
+                <div class="container" onclick={accTileClick}>
+                    <div class="imgwrapper">
+                        <img class="imgavatar"  src={imageUrl} alt="avatar">
+                    </div>
+                    <div class="infowrapper"> 
+                        <span> {account.Name}</span>
+                        <span class="slds-text-title_bold nameaccowner">{account.Owner.Name}</span>
+                        <div>
+                            <span> Budget:</span>
+                            <lightning-formatted-number value={account.Budget__c} format-style="currency" currency-code="USD" currency-display-as="symbol"></lightning-formatted-number>
+                        </div>
+                        <span class="employsaccnumber">Employees Number:  {account.NumberOfEmployees}</span>
+                        <span class="typeacc">Type:  {account.Type}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
